@@ -1,0 +1,13 @@
+[package]
+name = "tic-tac-toe"
+version = "0.1.0"
+edition = "2021"
+
+[profile.release]
+codegen-units = 1
+lto = true
+
+[dependencies]
+clap = { version = "4.4.8", features = ["derive"] }
+rand = "0.8.5"
+thiserror = "1.0.50"
